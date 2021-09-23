@@ -33,12 +33,12 @@ jobs:
       - name: Run script
         run: ./FPCexport.sh
       
-      - name: Upload a Build Artifact
-        uses: actions/upload-artifact@v2.2.4
-        with:
-          name: LDAPextract.csv
-          path: extract.csv
-          retention-days: 30
+      # - name: Upload a Build Artifact
+      #   uses: actions/upload-artifact@v2.2.4
+      #   with:
+      #     name: LDAPextract.csv
+      #     path: extract.csv
+      #     retention-days: 30
 
       # - name: SharePoint uploader
       #   # You may pin to the exact commit or the version.
