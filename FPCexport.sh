@@ -3,8 +3,8 @@
 export $(xargs <.env)
 
 #env | sort
-now=$(date +"%m_%d_%Y")
 
+#now=$(date +"%m_%d_%Y")
 
 java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --hostname $LDAPHOST \
@@ -15,11 +15,11 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --baseDN "dc=neu,dc=edu" \
     --scope sub  \
     --outputFormat multi-valued-csv \
-    --outputFile "extract${now}.csv" \
+    --outputFile "extract.csv" \
     --requestedAttribute givenname \
     --requestedAttribute sn \
     --requestedAttribute mail \
     --requestedAttribute eduPersonAffiliation \
     --filter "(eduPersonAffiliation=*)" 
     
- ls "extract${now}.csv"
+ ls "extract.csv"

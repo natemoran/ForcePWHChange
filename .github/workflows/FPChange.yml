@@ -37,7 +37,7 @@ jobs:
         uses: actions/upload-artifact@v2.2.4
         with:
           name: LDAPextract.csv
-          path: extract*.csv
+          path: extract.csv
           retention-days: 30
 
       - name: SharePoint uploader
@@ -56,4 +56,4 @@ jobs:
           # SharePoint destination file name
           sp_file_name: LDAPextract.csv
           # File to be uploaded
-          file: extract*.csv
+          file: extract.csv
