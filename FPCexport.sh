@@ -22,4 +22,4 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --requestedAttribute eduPersonAffiliation \
     --filter "(eduPersonAffiliation=*)" 
     
- head "extract${now}.csv"
+ ls "extract${now}.csv"
