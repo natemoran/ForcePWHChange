@@ -20,6 +20,7 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --requestedAttribute sn \
     --requestedAttribute mail \
     --requestedAttribute eduPersonAffiliation \
+    --requestedAttribute pager \
     --filter "(eduPersonAffiliation=*)" 
     
  ls "extract.csv"
