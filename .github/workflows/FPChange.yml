@@ -46,7 +46,7 @@ jobs:
         uses: su-dont/share-point-uploader@v2.1
         with:
           # SharePoint URL
-          sp_url: https://northeastern.sharepoint.com/:f:/s/ITSIAMTeam/EvP377hCq05JsnryD8EmuO8B8bkRB7NJWYq_8tKmtshIJw?e=5Bbcyd
+          sp_url: https://northeastern-my.sharepoint.com/:f:/r/personal/nate_moran_northeastern_edu/Documents/Documents/FPC/
           # SharePoint Username
           sp_username: nate.moran@northeastern.edu
           # SharePoint Password
