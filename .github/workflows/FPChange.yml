@@ -40,20 +40,20 @@ jobs:
           path: extract.csv
           retention-days: 30
 
-      - name: SharePoint uploader
-        # You may pin to the exact commit or the version.
-        # uses: su-dont/share-point-uploader@d5219f8801329ec36b7add0d3874a9df0564c577
-        uses: su-dont/share-point-uploader@v2.1
-        with:
-          # SharePoint URL
-          sp_url: https://northeastern-my.sharepoint.com/:f:/r/personal/nate_moran_northeastern_edu
-          # SharePoint Username
-          sp_username: nate.moran@northeastern.edu
-          # SharePoint Password
-          sp_password: ${{ secrets.PASSWORD }}
-          # SharePoint destination folder
-          sp_folder: "/Documents/Documents/FPC/"
-          # SharePoint destination file name
-          sp_file_name: LDAPextract.csv
-          # File to be uploaded
-          file: extract.csv
+      # - name: SharePoint uploader
+      #   # You may pin to the exact commit or the version.
+      #   # uses: su-dont/share-point-uploader@d5219f8801329ec36b7add0d3874a9df0564c577
+      #   uses: su-dont/share-point-uploader@v2.1
+      #   with:
+      #     # SharePoint URL
+      #     sp_url: https://northeastern-my.sharepoint.com/:f:/r/personal/nate_moran_northeastern_edu
+      #     # SharePoint Username
+      #     sp_username: nate.moran@northeastern.edu
+      #     # SharePoint Password
+      #     sp_password: ${{ secrets.PASSWORD }}
+      #     # SharePoint destination folder
+      #     sp_folder: "/Documents/Documents/FPC/"
+      #     # SharePoint destination file name
+      #     sp_file_name: LDAPextract.csv
+      #     # File to be uploaded
+      #     file: extract.csv
