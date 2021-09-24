@@ -4,7 +4,7 @@ export $(xargs <.env)
 
 #env | sort
 
-#now=$(date +"%m_%d_%Y")
+FILENAME=extract-$(date +"%H%M%S_%m_%d_%Y").csv
 
 java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --hostname $LDAPHOST \
@@ -15,7 +15,7 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --baseDN "dc=neu,dc=edu" \
     --scope sub  \
     --outputFormat multi-valued-csv \
-    --outputFile "extract.csv" \
+    --outputFile $FILENAME \
     --requestedAttribute givenname \
     --requestedAttribute sn \
     --requestedAttribute mail \
@@ -24,4 +24,6 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --requestedAttribute passwordExpirationTime\
     --filter "(eduPersonAffiliation=*)" 
     
- ls "extract.csv"
+ ls *.csv
+ mv $FILENAME '/Users/nate/OneDrive - Northeastern University/Documents/FPC/'
+ 
