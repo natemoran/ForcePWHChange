@@ -24,6 +24,9 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --requestedAttribute passwordExpirationTime\
     --filter "(eduPersonAffiliation=*)" 
     
- ls *.csv
+ls *.csv
+ 
+if [ -f '/Users/nate/OneDrive - Northeastern University/Documents/FPC/']
  mv $FILENAME '/Users/nate/OneDrive - Northeastern University/Documents/FPC/'
+fi
  
