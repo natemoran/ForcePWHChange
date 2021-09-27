@@ -26,7 +26,7 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     
 ls *.csv
  
-if [ -d '/Users/nate/OneDrive - Northeastern University/Documents/FPC/']; then
+if [ -d '/Users/nate/OneDrive - Northeastern University/Documents/FPC/' ]; then
  mv $FILENAME '/Users/nate/OneDrive - Northeastern University/Documents/FPC/'
 fi
  
