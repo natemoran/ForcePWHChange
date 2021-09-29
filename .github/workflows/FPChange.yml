@@ -30,8 +30,11 @@ jobs:
         run: gpg --quiet --batch --yes --decrypt --passphrase=${{ secrets.ENV_PASSPHRASE }} --output .env prod.env.gpg
 
       # Runs a set of commands using the runners shell
-      - name: Run script
+      - name: Run PowerBI export script
         run: ./FPCexport.sh   
+      
+      - name: Run mail groups export script
+        run: ./mailexport.sh           
       
       # - name: Upload a Build Artifact
       #   uses: actions/upload-artifact@v2.2.4
