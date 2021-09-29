@@ -19,3 +19,6 @@ Thumbs.db
 
 #CSVs
 *.csv
+
+#jars
+*.jar

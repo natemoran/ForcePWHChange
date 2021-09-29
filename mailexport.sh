@@ -2,6 +2,8 @@
 
 export $(xargs <.env)
 
+curl https://repo1.maven.org/maven2/com/unboundid/unboundid-ldapsdk/6.0.1/unboundid-ldapsdk-6.0.1.jar --output unboundid-ldapsdk-6.0.1.jar
+
 echo "Building parents Email file"
 java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --hostname $LDAPHOST \
