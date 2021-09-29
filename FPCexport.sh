@@ -24,6 +24,7 @@ java -jar unboundid-ldapsdk-6.0.1.jar ldapsearch \
     --requestedAttribute eduPersonAffiliation \
     --requestedAttribute pager \
     --requestedAttribute passwordExpirationTime\
+    --requestedAttribute neuedualtmail \
     --filter "(eduPersonAffiliation=*)" 
     
 ls *.csv
